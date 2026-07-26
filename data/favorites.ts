@@ -1,25 +1,24 @@
-// EDIT ME: replace with your real favorites and comments.
-export type Favorite = {
-  categoryEn: string;
-  categoryZh: string;
-  name: string;
-  commentEn: string;
-  commentZh: string;
+// EDIT ME: swap in your own favorite games (cover art goes in public/images/favorites/).
+export type FavoriteGame = {
+  title: string;
+  image: string;
+  steamUrl: string;
 };
 
-export const favorites: Favorite[] = [
+export const favorites: FavoriteGame[] = [
   {
-    categoryEn: "Favorite Game",
-    categoryZh: "最喜欢的游戏",
-    name: "Add yours here",
-    commentEn: "Why you love it.",
-    commentZh: "为什么喜欢它。",
+    title: "Outer Wilds",
+    image: "/images/favorites/outer-wilds.jpg",
+    steamUrl: "https://store.steampowered.com/app/753640/Outer_Wilds/",
   },
   {
-    categoryEn: "Favorite Movie",
-    categoryZh: "最喜欢的电影",
-    name: "Add yours here",
-    commentEn: "Why you love it.",
-    commentZh: "为什么喜欢它。",
+    title: "Dota 2",
+    image: "/images/favorites/dota-2.jpg",
+    steamUrl: "https://store.steampowered.com/app/570/Dota_2/",
+  },
+  {
+    title: "Dark Souls III",
+    image: "/images/favorites/dark-souls-3.jpg",
+    steamUrl: "https://store.steampowered.com/app/374320/DARK_SOULS_III/",
   },
 ];
