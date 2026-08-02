@@ -9,14 +9,19 @@ function pseudoRandom(seed: number) {
 
 const STAR_COUNT = 70;
 
-const stars = Array.from({ length: STAR_COUNT }, (_, i) => {
-  const left = pseudoRandom(i * 1.13) * 100;
-  const top = pseudoRandom(i * 2.71) * 100;
-  const size = 1 + pseudoRandom(i * 3.31) * 1.6;
-  const delay = pseudoRandom(i * 4.42) * 6;
-  const duration = 3 + pseudoRandom(i * 5.53) * 4;
-  return { left, top, size, delay, duration, key: i };
-});
+// Emit fixed-precision strings rather than raw floats. The values are already
+// deterministic, but a full-precision float ("83.63866854288062%") gets rounded
+// somewhere between the server HTML and the client, and React reads the
+// difference as a hydration mismatch. 3 decimals is well past sub-pixel and
+// stays under 6 significant digits, so nothing downstream can shorten it.
+const stars = Array.from({ length: STAR_COUNT }, (_, i) => ({
+  key: i,
+  left: `${(pseudoRandom(i * 1.13) * 100).toFixed(3)}%`,
+  top: `${(pseudoRandom(i * 2.71) * 100).toFixed(3)}%`,
+  size: `${(1 + pseudoRandom(i * 3.31) * 1.6).toFixed(3)}px`,
+  delay: `${(pseudoRandom(i * 4.42) * 6).toFixed(3)}s`,
+  duration: `${(3 + pseudoRandom(i * 5.53) * 4).toFixed(3)}s`,
+}));
 
 export function Starfield() {
   const parallaxRef = useRef<HTMLDivElement>(null);
@@ -58,12 +63,12 @@ export function Starfield() {
             key={star.key}
             className="star"
             style={{
-              left: `${star.left}%`,
-              top: `${star.top}%`,
-              width: `${star.size}px`,
-              height: `${star.size}px`,
-              animationDelay: `${star.delay}s`,
-              animationDuration: `${star.duration}s`,
+              left: star.left,
+              top: star.top,
+              width: star.size,
+              height: star.size,
+              animationDelay: star.delay,
+              animationDuration: star.duration,
             }}
           />
         ))}
