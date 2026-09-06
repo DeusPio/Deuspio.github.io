@@ -29,26 +29,6 @@ export default function Home() {
         <p className="tagline">
           <Bilingual en={site.tagline.en} zh={site.tagline.zh} />
         </p>
-        <div className="hero-statement">
-          <p>
-            <Bilingual
-              en="Building for the web is what I do for a living. Building games is what I do to live."
-              zh="做网页是工作，做游戏是生活。"
-            />
-          </p>
-          <p>
-            <Bilingual
-              en="A life that creates nothing would feel incomplete to me."
-              zh="对我来说，没有创作的人生是不完整的。"
-            />
-          </p>
-          <p>
-            <Bilingual
-              en="Everything I've finished, everything I haven't, and everything still stuck in between — it's all here."
-              zh="我做完的、没做完的、还卡在中间的，都在这里。"
-            />
-          </p>
-        </div>
         <a className="scroll-cue" href="#about">
           <span className="en">Keep exploring</span>
           <span className="zh">继续探索</span>
@@ -64,14 +44,26 @@ export default function Home() {
           </h2>
           <p>
             <Bilingual
-              en="I have a Master's in Machine Learning and Computer Vision from the Australian National University. These days I'm in Canberra, working as a web developer."
-              zh="我毕业于澳大利亚国立大学（ANU），机器学习与计算机视觉硕士。现在在堪培拉，做 web 开发。"
+              en="I'm a fairly unremarkable person living in Canberra. Software development is the work; games are the life."
+              zh="我是堪培拉一个平平无奇的人。软件开发是工作，游戏是生活。"
             />
           </p>
           <p>
             <Bilingual
-              en="No grand plan for what comes next — I just want to stay in this field and keep getting deeper at it."
-              zh="接下来没什么宏大的计划，就是想在这一行继续做下去，做得更深一些。"
+              en="In my free time I play games. That's a lie — I play when I'm busy too. PC, console, mobile, TCGs, board games: I'll try just about anything."
+              zh="空闲的时候我喜欢打游戏——骗你的，忙的时候也打。电脑、主机、手游、TCG、桌游，基本来者不拒。"
+            />
+          </p>
+          <p>
+            <Bilingual
+              en="But I like making them more than playing them. Four years of game development, mostly in Unity, several Global Game Jams, and a few longer-running projects."
+              zh="但比起玩，我更喜欢做。四年游戏开发经验，主要用 Unity，参加过好几届 Global Game Jam，也做过一些长期项目。"
+            />
+          </p>
+          <p>
+            <Bilingual
+              en="I've come to think creating is the whole point — the one thing that separates us from every other species. Games are the medium I want to say things through, so people can experience an idea instead of just being told it."
+              zh="我一直觉得人生的终极目标是创造——那大概是人和其他物种唯一的区别。我想让游戏成为我思想的载体，让更多人真正体验到它，而不只是听我说。"
             />
           </p>
         </Reveal>
