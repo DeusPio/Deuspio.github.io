@@ -44,26 +44,26 @@ export default function Home() {
           </h2>
           <p>
             <Bilingual
-              en="I'm a fairly unremarkable person living in Canberra. Software development is the work; games are the life."
-              zh="我是堪培拉一个平平无奇的人。软件开发是工作，游戏是生活。"
+              en="I'm an unremarkable person in the city of Canberra. I think software development is work, and games are life."
+              zh="我是一名在堪培拉这个城市中一位平平无奇的人。我觉得做软件开发是工作，游戏是生活。"
             />
           </p>
           <p>
             <Bilingual
-              en="In my free time I play games. That's a lie — I play when I'm busy too. PC, console, mobile, TCGs, board games: I'll try just about anything."
-              zh="空闲的时候我喜欢打游戏——骗你的，忙的时候也打。电脑、主机、手游、TCG、桌游，基本来者不拒。"
+              en="In my free time I like to play games. Just kidding — I play when I'm busy too. PC games, console games, mobile games, TCG, board games, I've dabbled in all of them."
+              zh="在空闲的时候我喜欢打游戏。骗你的，忙的时候也打。电脑游戏，主机游戏，手游，TCG，桌游都有涉猎。"
             />
           </p>
           <p>
             <Bilingual
-              en="But I like making them more than playing them. Four years of game development, mostly in Unity, several Global Game Jams, and a few longer-running projects."
-              zh="但比起玩，我更喜欢做。四年游戏开发经验，主要用 Unity，参加过好几届 Global Game Jam，也做过一些长期项目。"
+              en="Beyond playing games I also like making them. I have four years of game development experience, mainly using the Unity engine, have taken part in several Global Game Jams, and have also built long-term projects."
+              zh="不止打游戏我还喜欢做游戏，我有四年的游戏开发经验，主要使用 Unity 引擎，参与过多个 Global Game Jam，也制作过长期项目。"
             />
           </p>
           <p>
             <Bilingual
-              en="I've come to think creating is the whole point — the one thing that separates us from every other species. Games are the medium I want to say things through, so people can experience an idea instead of just being told it."
-              zh="我一直觉得人生的终极目标是创造——那大概是人和其他物种唯一的区别。我想让游戏成为我思想的载体，让更多人真正体验到它，而不只是听我说。"
+              en="I think the ultimate goal of life is to create — it's the one thing that sets humans apart from every other species. I want to use games as the vehicle for my thoughts, so that more people can experience them."
+              zh="我觉得人生的终极目标是创造，是唯一可以区分人和其他物种的方式。我想通过游戏作为我思想的载体，让更多人体验到。"
             />
           </p>
         </Reveal>
