@@ -310,7 +310,29 @@ main {
 .tagline {
   color: var(--driftwood);
   font-size: 1.2rem;
+  margin: 0 0 2rem;
+}
+
+.hero-statement {
+  max-width: 34rem;
   margin: 0 0 3rem;
+}
+
+/* gap between the three lines must beat the wrapped-line gap, or they read as one block */
+.hero-statement p {
+  color: var(--driftwood);
+  font-size: 1.02rem;
+  line-height: 1.75;
+  margin: 0 0 1rem;
+}
+
+/* the opening line is the hook — let it sit brighter than the two that follow */
+.hero-statement p:first-child {
+  color: var(--ash);
+}
+
+.hero-statement p:last-child {
+  margin-bottom: 0;
 }
 
 .scroll-cue {

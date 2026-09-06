@@ -29,6 +29,26 @@ export default function Home() {
         <p className="tagline">
           <Bilingual en={site.tagline.en} zh={site.tagline.zh} />
         </p>
+        <div className="hero-statement">
+          <p>
+            <Bilingual
+              en="Building for the web is what I do for a living. Building games is what I do to live."
+              zh="做网页是工作，做游戏是生活。"
+            />
+          </p>
+          <p>
+            <Bilingual
+              en="A life that creates nothing would feel incomplete to me."
+              zh="对我来说，没有创作的人生是不完整的。"
+            />
+          </p>
+          <p>
+            <Bilingual
+              en="Everything I've finished, everything I haven't, and everything still stuck in between — it's all here."
+              zh="我做完的、没做完的、还卡在中间的，都在这里。"
+            />
+          </p>
+        </div>
         <a className="scroll-cue" href="#about">
           <span className="en">Keep exploring</span>
           <span className="zh">继续探索</span>
@@ -42,11 +62,16 @@ export default function Home() {
           <h2>
             <Bilingual en="About" zh="关于我" />
           </h2>
-          {/* EDIT ME: write your own bio here */}
           <p>
             <Bilingual
-              en="I build things for the web, for the desktop, and inside game engines. This is my little corner of the internet."
-              zh="我喜欢做网页、软件和游戏相关的东西，这里是属于我的一小片网络角落。"
+              en="I have a Master's in Machine Learning and Computer Vision from the Australian National University. These days I'm in Canberra, working as a web developer."
+              zh="我毕业于澳大利亚国立大学（ANU），机器学习与计算机视觉硕士。现在在堪培拉，做 web 开发。"
+            />
+          </p>
+          <p>
+            <Bilingual
+              en="No grand plan for what comes next — I just want to stay in this field and keep getting deeper at it."
+              zh="接下来没什么宏大的计划，就是想在这一行继续做下去，做得更深一些。"
             />
           </p>
         </Reveal>
